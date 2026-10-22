@@ -15,7 +15,7 @@
 }
 
 * { 
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box; /*Elementos em caixas*/
     font-family: Product Sans;
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     width: 100%;
     height: 10vh;
-    z-index: 99; /*Forçar o conteúdo sempre fica no topo*/
+    z-index: 99; /*fonça o conteúdo sempre fica no topo*/
 
 }
 
