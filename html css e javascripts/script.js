@@ -13,7 +13,7 @@ var tl = gsap.timeline({
 tl.to(
     '#fanta',
     {
-        top: '120%', // MOVE O ELEMENTO COM ID FANTA PARA 120% DO TOPO
+        top: '115%', // MOVE O ELEMENTO COM ID FANTA PARA 120% DO TOPO
         left: '0%',
     },
     'orange'
@@ -57,3 +57,26 @@ tl.to(
     },
     'orange'
 ); //NOMEADO ENTRE TRECHO DE ANIMAÇÃO COMO 'ORANGE' PARA SICRONIZAÇÃO
+
+// CRIANDO OUTRA TIMELINE
+
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.three',
+        start: '0% 95%',
+        end: '20% 50%', // FIM DA ANIMAÇÃO (TOPO DA TELA ATINGE 50% DA ALTURA QUANDO ESTIVER 20% DA SEÇÃO .three)
+        scrub: true, 
+        markers: true, //DEPURAÇÃO
+    },
+});
+
+
+tl2.to(
+    '#lemon',
+    {
+        rotate: '-90deg', // INICIA O ELEMENTO FORA DA TELA, Á ESQUERDA (-100%)
+        left: '-100%', // INICIA O ELEMENTO LIGEIRAMENTE ABAIXO DA TELA (110% D0 TOPO)
+        top: '110%', //  INICIA O ELEMENTO COM CLASSE 'lemon' ROTACIONADO
+    },
+    'ca'
+);
